@@ -1,10 +1,15 @@
 .body{
     /* border: 1px solid red; */
     flex: 0.8;
+    overflow-y: overlay;
     height: 100vh;
     color: white;
     padding: 30px;
     background: linear-gradient(rgb(91, 87, 115),rgb(0,0,0,1));
+}
+
+.body::-webkit-scrollbar{
+    display: none;
 }
 
 .body__info{
@@ -51,4 +56,8 @@
 .body__shuffle:hover{
     transition: 100ms transform ease-in;
     transform: scale(1.08);
+}
+
+.body__songs{
+    margin: 20px -30px;
 }
